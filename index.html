@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            font-size: 0.95em;
+        }
+        h4{
+            font-size: 1.05em;
+            margin-bottom:2px;
+        }
+        .wrapper {
+            border: 1px solid #ccc;
+            border-radius: 18px;
+            padding: 0px;
+            max-width: 900px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            padding: 16px;
+            text-align: center;
+            background-color: #b3b2b2;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+        header h2{
+            margin-bottom: 8px;
+        }
+        a{
+            margin-right: 6px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        a:hover{
+            color: white;
+        }
+        a:focus{
+            color: white;
+        }
+        figure {
+            text-align: center;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);  
+        }
+        figure :hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            }
+        figcaption {
+            padding: 10px;
+           background: #f8f9fa;
+        }
+        img {
+            width: 260px;
+            height: 260px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        nav span {
+            margin: 0 8px;
+        }
+        section {
+            margin-top: 16px;
+        }
+        .main-body {
+            display: flex;
+            gap: 30px;
+            padding: 16px;
+        }
+        .info {
+            padding: 6px 18px;
+        }
+        ul{
+            list-style-type: square;
+            margin-top: 4px;
+            margin-left: 25px;
+        }
+        .bio {
+            margin-bottom: 6px;
+        }
+        #time{
+            color: #706f6f;
+            font-family: monospace;
+            font-size: 1.1em;
+        }
+        @media (max-width:768px) {
+            .wrapper{
+                max-width: 500px;
+            }
+            .main-body {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .info {
+                padding: 0px 6% 6px 6%;
+            }
+            figure{
+                width: 80%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        @media (max-width:420px) {
+            .wrapper{
+                max-width: 360px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <article data-testid="test-profile-card" class="wrapper">
+        <header>
+           <h2 data-testid="test-user-name">Dirisu Paul</h2>
+           <nav data-testid="test-user-social-links">
+                    <span >
+                        <a  data-testid="test-user-social-facebook" 
+                        href="https://web.facebook.com/paul.dirisu.779" 
+                        target="_blank" rel="noopener noreferrer"> 
+                        Facebook</a>|
+                    </span>
+                    <span >
+                        <a data-testid="test-user-social-linkedin" 
+                        href="https://www.linkedin.com/in/paul-dirisu-61303019a"
+                        target="_blank" rel="noopener noreferrer"> Linkedin</a>|
+                    </span>
+                    <span ><a data-testid="test-user-social-instagram" 
+                        href="https://www.instagram.com/osi_gbemhe/?next=%2F" 
+                        target="_blank" rel="noopener noreferrer"> Instagram</a>
+                    </span>
+           </nav>
+        </header>
+        <div class="main-body">
+            <figure>
+               <img data-testid="test-user-avatar"  src="mypic.jpg" alt="Dirisu Paul Photo">
+               <figcaption>
+               <h4>Dirisu Paul</h4>
+               <p>Fullstack Developer</p>
+               </figcaption>
+            </figure>
+            <div class="info"> 
+                <section>     
+                    <p data-testid="test-user-bio" class="bio">
+                        I am a passionate and detail-oriented Fullstack Developer, I am skilled in HTML, 
+                        CSS/Tailwind CSS, JavaScript, React.js, Next.js and Typescript,  for Frontend and PHP, 
+                        MySQL and node.js for Backend. I specialize in building responsive and user-friendly 
+                        web applications with a strong focus on performance and accessibility.
+                    </p>
+                    <h4>CurrentTime : <span data-testid="test-user-time"  id="time"></span></h4>
+                </section> 
+                <section>
+                    <h4> Hobbies</h4>
+                    <ul data-testid="test-user-hobbies">
+                      <li>Watching Movies</li>
+                      <li>Playing games</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Dislikes</h4>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Slow internet</li>
+                        <li>Unrealiability</li>
+                    </ul>  
+                </section>  
+            </div>
+        </div>
+    </article>
+    <script>
+        const timeElement = document.getElementById('time');
+        const currentTime = Date.now().toString();
+        timeElement.textContent = `${currentTime}`;
+    </script>
+</body>
+</html>
