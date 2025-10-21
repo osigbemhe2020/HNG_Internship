@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><button>Home</button></a>
+        <a href="about-me.html"><button>About me</button></a>
+        <a href="contact-us.html"><button>Contact us</button></a>
+   </div>
+    <article data-testid="test-profile-card" class="wrapper">
+        <header>
+           <h2 data-testid="test-user-name">Dirisu Paul</h2>
+           <nav data-testid="test-user-social-links">
+                    <span >
+                        <a  data-testid="test-user-social-facebook" 
+                        href="https://web.facebook.com/paul.dirisu.779" 
+                        target="_blank" rel="noopener noreferrer"> 
+                        Facebook</a>|
+                    </span>
+                    <span >
+                        <a data-testid="test-user-social-linkedin" 
+                        href="https://www.linkedin.com/in/paul-dirisu-61303019a"
+                        target="_blank" rel="noopener noreferrer"> Linkedin</a>|
+                    </span>
+                    <span ><a data-testid="test-user-social-instagram" 
+                        href="https://www.instagram.com/osi_gbemhe/?next=%2F" 
+                        target="_blank" rel="noopener noreferrer"> Instagram</a>
+                    </span>
+           </nav>
+        </header>
+        <div class="main-body">
+            <figure>
+               <img data-testid="test-user-avatar"  src="mypic.jpg" alt="Dirisu Paul Photo">
+               <figcaption>
+               <h4>Dirisu Paul</h4>
+               <p>Fullstack Developer</p>
+               </figcaption>
+            </figure>
+            <div class="info"> 
+                <section>     
+                    <p data-testid="test-user-bio" class="bio">
+                        I am a passionate and detail-oriented Fullstack Developer, I am skilled in HTML, 
+                        CSS/Tailwind CSS, JavaScript, React.js, Next.js and Typescript,  for Frontend and PHP, 
+                        MySQL and node.js for Backend. I specialize in building responsive and user-friendly 
+                        web applications with a strong focus on performance and accessibility.
+                    </p>
+                    <h4>CurrentTime : <span data-testid="test-user-time"  id="time"></span></h4>
+                </section> 
+                <section>
+                    <h4> Hobbies</h4>
+                    <ul data-testid="test-user-hobbies">
+                      <li>Watching Movies</li>
+                      <li>Playing games</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Dislikes</h4>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Slow internet</li>
+                        <li>Unrealiability</li>
+                    </ul>  
+                </section>  
+            </div>
+        </div>
+    </article>
+    <script>
+        const timeElement = document.getElementById('time');
+        const currentTime = Date.now().toString();
+        timeElement.textContent = `${currentTime}`;
+    </script>
+</body>
+</html>

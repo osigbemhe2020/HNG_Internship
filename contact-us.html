@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="navbar">
+        <a href="index.html"><button>Home</button></a>
+        <a href="about-me.html"><button>About me</button></a>
+        <a href="contact-us.html"><button>Contact us</button></a>
+   </div>
+    <section class="form-wrap" data-testid="test-contact-page">  
+        <h2>Contact us</h2>
+            <div class="form-cont">
+                <form >
+                    <label for ='fname'>Full Name</label><br>
+                    <input type ="text" id="fname" data-testid="test-contact-name" placeholder="Dirisu Paul" required><br>
+                    <label for="e-mail">E-mail:</label><br>
+                    <input type="text" data-testid="test-contact-email" id="e-mail" aria-describedby="email-error" placeholder="dirisupaul16@gmail.com" required><br>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" data-testid="test-contact-subject" id="subject" placeholder="Frontend" required><br>
+                    <label for="message">Message </label><br>
+                    <textarea data-testid="test-contact-message" id="message"  placeholder="message" minlength="10" required>
+                    </textarea>
+                    <div id="result">
+
+                    </div>
+                   <div class="btn-case"> <button type="submit" data-testid= "test-contact-submit">Send message</button></div>
+                </form>
+            </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
