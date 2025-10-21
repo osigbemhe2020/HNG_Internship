@@ -40,8 +40,11 @@ Required Sections:
 * Extra thoughts (test-about-extra)
 ### General Requirements
 ✅Semantic HTML throughout
+
 ✅Fully Responsive design (mobile, tablet, desktop)
+
 ✅Accessible with proper ARIA attributes
+
 ✅Modular and Readable code structure
 
 ## Technologies Used
