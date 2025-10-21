@@ -1,5 +1,12 @@
 # HNG_Internship
 
+# Stage 1 Frontend Task - Contact us and About me
+## Overview 
+This project is part of the **HNG Stage 0 Frontend Task**.
+it involves creating two new pages — a Contact Us page with form validation, and an About Me page where you share your reflections using **semantic HTML, CSS, and vanilla JavaScript** — without any frontend framework.
+
+### contact us page
+
 # Stage 0 Frontend Task – Profile Card
 
 ##  Overview
