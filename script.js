@@ -33,7 +33,7 @@
                 resultDiv.innerHTML += '<p data-testid="test-contact-error-subject" style="color:red;">All fields are required.</p>';
                 return;
             }
-            if (messageInput.value.length < 10) {
+            if (messageInput.value.trim().length < 10) {
                 resultDiv.innerHTML += '<p data-testid="test-contact-error-message" style="color:red;">Message must be at least 10 characters long.</p>';
                 return;
             }
