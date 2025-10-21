@@ -9,7 +9,7 @@ it involves creating two new pages — a Contact Us page with form validation, a
 * Form Validation with real-time feedback
 * Required Fields: Name, Email, Subject, Message
 * Validation Rules:
-1.All fields required
+1. All fields required
 
 2. Valid email format (name@example.com)
 
@@ -19,9 +19,9 @@ it involves creating two new pages — a Contact Us page with form validation, a
 
 1. Proper <label> associations with for attributes
 
-* aria-describedby for error messages
+2. aria-describedby for error messages
 
-* Keyboard navigable
+3. Keyboard navigable
 
 * Success Message upon valid submission
 
