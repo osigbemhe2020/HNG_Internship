@@ -7,7 +7,7 @@ it involves creating two new pages — a Contact Us page with form validation, a
 
 ### contact us page
 * Form Validation with real-time feedback
-* Required Fields: Name, Email, Subject, Message
+* Required Fields: Name, Email, Subject, w:Message
 * Validation Rules:
 1. All fields required
 
@@ -15,7 +15,7 @@ it involves creating two new pages — a Contact Us page with form validation, a
 
 3. Message minimum 10 characters
 
-* Accessibility Features:
+* Accessibility Features
 
 1. Proper <label> associations with for attributes
 
