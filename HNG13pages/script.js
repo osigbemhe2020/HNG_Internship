@@ -19,11 +19,7 @@
         const timeElement = document.getElementById('time');
         timeElement.setAttribute('aria-live', 'polite');
 
-        function updateTime() {
-            timeElement.textContent = Date.now().toString();
-        }
-        updateTime();
-        setInterval(updateTime, 1000);
+        
 
         document.querySelector('form').addEventListener('submit', function(event) {
             event.preventDefault();
