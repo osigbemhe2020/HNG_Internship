@@ -22,6 +22,12 @@
     max-height: 50vh;
    }
 
+   .wrapper a:focus-visible {
+    outline: 2px solid #07213f;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
 /* profile card */
 *{
             box-sizing: border-box;
